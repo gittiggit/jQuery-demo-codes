@@ -97,6 +97,8 @@ $(function(){
     $(".div2").wrapAll("<div class='containerDiv'></div>");
     $("#append-example").append("<p>Appended text</p>");
     $("#append-example").prepend("<p>prepanded text</p>");
+    $("#insert-example").("<p> Inserted before</p>");
+    $("#insert-example").after("<p> Inserted after</p>");
 });
 
 
