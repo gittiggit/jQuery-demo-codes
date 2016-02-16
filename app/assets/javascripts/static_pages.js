@@ -95,6 +95,8 @@ $(function(){
     $(".div1").wrap("<div class='containerDiv'></div>");
     //$(".div1").unwrap();
     $(".div2").wrapAll("<div class='containerDiv'></div>");
+    $("#append-example").append("<p>Appended text</p>");
+    $("#append-example").prepend("<p>prepanded text</p>");
 });
 
 
