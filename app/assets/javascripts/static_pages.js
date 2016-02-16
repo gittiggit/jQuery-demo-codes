@@ -65,4 +65,28 @@ $(function(){
         result += "Salary = "+employeesJSON[i].salary+"<br>";
     }
     $("#json-result-mul-employee").html(result);
+
+    // Converting JSON object to string format
+
+    var jsonString =  JSON.stringify(employeesJSON);
+    $("#JSON-to-string").html(jsonString);
+
+    // Converting JSON string to JSON object
+    var jsonString = [{"firstName":"Jamal","lastName":"Ahmed","gender":"Male","salary":50000},
+                        {"firstName":"Kamal","lastName":"Ahmed","gender":"Male","salary":50000},
+                        {"firstName":"Habib","lastName":"Ahmed","gender":"Male","salary":50000},
+                        {"firstName":"Montu","lastName":"Miah","gender":"Male","salary":50000}]
+    var jsonObject = JSON.parse(jsonString);
+
+    var result = ""
+    $.each(jsonObject, function(i, item){
+        result += "First Name = "+item.firstName+ "<br>";
+        result += "Last Name = "+item.lastName+ "<br>";
+        result += "Gender = "+item.gender+ "<br>";
+        result += "Salary= "+item.salary+ "<br>";
+    });
+    $("#JSON-string-to-object").html(result);
+
 });
+
+
