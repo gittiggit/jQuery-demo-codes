@@ -32,3 +32,10 @@ $(function(){
     });
 });
 
+$(function(){
+    $('#product_category_name').autocomplete({
+        //source: ['foo', 'food', 'four']
+        source: $('#product_category_name').data('autocomplete-source')
+    });
+});
+
